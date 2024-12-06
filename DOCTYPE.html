@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HuiYing Spaghetti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Amatic SC", sans-serif
+            }
+
+
+            .menu {
+                display: none
+            }
+
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("./seafoodtomyumspaghetti.jpg");
+                min-height: 100%;
+            }
+        </style>
+    </head>
+<body>
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">Open from 11am to 9pm</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white w3-hide-small" style="font-size:100px">HUIYING<br>SPAGHETTI</span>
+            <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>huiying<br>SPAGHETTI</b></span>
+            <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+        </div>
+    </header>
+
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+        
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Spaghetti');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Spaghetti</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+                </a>
+            </div>
+            
+            <div id="Spaghetti" class="w3-container menu w3-padding-32 w3-white" style="display:block;">
+                <img src="seafoodtomyumspaghetti.jpg" alt="">
+                <h1><b>Seafood TomYum Spaghetti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM19.90</span></h1>
+                <p class="w3-text-grey">Fresh shrimp, fresh clams, fresh mussels with spicy and sour TomYum sauce</p>
+                <hr>
+
+
+                <img src="saltedeggyolkchickenspaghetti.jpeg">
+                <h1><b>Salted Egg Spaghetti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM18.90</span></h1>
+                <p class="w3-text-grey">tender pieces of fried chicken coated in a creamy, savory salted egg yolk sauce</p>
+                <hr>
+
+
+                <img src="seafoodpesto.jpg" height="500" width="600">
+                <h1><b>Seafood Pesto Spaghetti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM19.00</span></h1>
+                <p class="w3-text-grey">Fresh shrimp, fresh clams,fresh mussels with pesto</p>
+                <hr>
+
+
+                <img src="teriyakichickenspaghetti.jpg" height="500" width="600">
+                <h1><b>Teriyaki chicken spaghetti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM17.50</span></h1>
+                <p class="w3-text-grey">Tender pieces of chicken coated in a rich teriyaki sauce provide a sweet and savory flavor</p>
+                <hr>
+
+
+            </div>
+
+
+            <div event="Drinks" class="w3-container menu w3-padding-32 w3-white" style="display:block;">
+                <img src="lemontea.jpg" height="500" width="300">
+                <h1><b>Lemon Tea</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round">RM6.50</span></h1>
+                <p class="w3-text-grey">Aromatic and refreshing</p>
+                <hr>
+
+
+                <img src="icedlatte.jpg" height="400" width="400">
+                <h1><b>Iced Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM10.00</span></h1>
+                <p class="w3-text-grey">Smooth and creamy</p>
+                <hr>
+
+
+                <img src="mixedberrysmoothie.jpg" height="400" width="400">
+                <h1><b>Mixed Berry Smoothie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM12.00</span></h1>
+                <p class="w3-text-grey"> Balances natural sweetness with a refreshing tartness from the berries.</p>
+                <hr>
+
+
+                <img src="icedchocolatecreamy.jpg" height="400" width="400">
+                <h1><b>Iced Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM11.00</span></h1>
+                <p class="w3-text-grey">A delightful blend of creamy milk and smooth chocolate, served chilled.</p>
+            </div>
+
+
+            <div event="Starter" class="w3-container menu w3-padding-32 w3-white" style="display:block;">
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round">RM8.00</span></h1>
+                <p class="w3-text-grey">Can Ask the waiter</p>
+                <hr>
+                
+                <img src="Bruschetta.jpg" height="500" width="600">
+                <h1></h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM8.00</span></h1>
+                <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                <hr>
+
+
+                <img src="garlicbread.jpg" height="500" width="600">
+                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM7.50</span></h1>
+                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                <hr>
+
+
+                <img src="Fruit-Salad.jpg" height="500" width="600">
+
+                <h1><b>Fruit Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">RM8.50</span></h1>
+                <p class="w3-text-grey"> Can include a variety of fruits like watermelon, pineapple, berries, kiwi, apples, and oranges,personal preference.</p>
+            </div><br>
+
+
+        </div>
+    </div>
+
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <p>Our HuiYing Spaghetti offers innovative flavors by incorporating local ingredients and unique seasonings, creating distinctive pasta dishes such as Tom Yum Seafood Spaghetti and Salted Egg Seafood Spaghetti. These special creations blend Italian culinary traditions with local tastes, offering a one-of-a-kind dining experience that caters to adventurous food lovers.</p>
+            <p><strong>The Chef?</strong> is Miss Huiying
+            <p>We are proud of our interiors.</p>
+            <img src="interiorcafe.jpeg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+                alt="Restaurant">
+            <h1><b>Opening Hours</b></h1>
+
+
+            <div class="w3-row">
+                <div class="w3-col s6">
+                    <p>Monday CLOSED</p>
+                    <p>Tuesday to Sunday: 10:00 AM to 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p>Find us at some address at some place or call us at 018-8886666</p>
+            <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                        required name="date"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text">
+                <a href="page2.html" target="_blank"><button>Reservation</button>
+                </p>
+                </a>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
